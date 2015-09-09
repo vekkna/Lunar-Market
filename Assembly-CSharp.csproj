@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{A1801051-0B03-7319-883A-A4C662D394D4}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_5_3;UNITY_4_5;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\BankColliderScript.cs" />
+     <Compile Include="Assets\Scripts\BankScript.cs" />
+     <Compile Include="Assets\Scripts\ButtonScript.cs" />
+     <Compile Include="Assets\Scripts\Game page scripts\BankColliderScript.cs" />
+     <Compile Include="Assets\Scripts\Game page scripts\BankScript.cs" />
+     <Compile Include="Assets\Scripts\Game page scripts\ButtonScript.cs" />
+     <Compile Include="Assets\Scripts\Game page scripts\DebuggerScript.cs" />
+     <Compile Include="Assets\Scripts\Game page scripts\GameManagerScript.cs" />
+     <Compile Include="Assets\Scripts\Game page scripts\GlobalData.cs" />
+     <Compile Include="Assets\Scripts\Game page scripts\GoodsScript.cs" />
+     <Compile Include="Assets\Scripts\Game page scripts\LotScript.cs" />
+     <Compile Include="Assets\Scripts\Game page scripts\SalesPriceScript.cs" />
+     <Compile Include="Assets\Scripts\Game page scripts\SurrenderScript.cs" />
+     <Compile Include="Assets\Scripts\Game page scripts\WarehouseScript.cs" />
+     <Compile Include="Assets\Scripts\Game page scripts\totalScoreScript.cs" />
+     <Compile Include="Assets\Scripts\GameManagerScript.cs" />
+     <Compile Include="Assets\Scripts\GameOverScript.cs" />
+     <Compile Include="Assets\Scripts\GlobalData.cs" />
+     <Compile Include="Assets\Scripts\GoodsScript.cs" />
+     <Compile Include="Assets\Scripts\LotScript.cs" />
+     <Compile Include="Assets\Scripts\SalesPriceScript.cs" />
+     <Compile Include="Assets\Scripts\StartPageScript.cs" />
+     <Compile Include="Assets\Scripts\VictoryDisplayScript.cs" />
+     <Compile Include="Assets\Scripts\WarehouseScript.cs" />
+     <Compile Include="Assets\Scripts\about page scripts\aboutPageScript.cs" />
+     <Compile Include="Assets\Scripts\game over scripts\GameOverScript.cs" />
+     <Compile Include="Assets\Scripts\game over scripts\arrowScript.cs" />
+     <Compile Include="Assets\Scripts\game over scripts\flickeringTextScript.cs" />
+     <Compile Include="Assets\Scripts\game over scripts\textPopUpScript.cs" />
+     <Compile Include="Assets\Scripts\instructions page scripts\rackScript.cs" />
+     <Compile Include="Assets\Scripts\instructions page scripts\scrollRackScript.cs" />
+     <Compile Include="Assets\Scripts\instructions page scripts\scrollScript.cs" />
+     <Compile Include="Assets\Scripts\transitionScript.cs" />
+     <Compile Include="Assets\Scripts\welcome page scripts\StartPageScript.cs" />
+     <Compile Include="Assets\Scripts\welcome page scripts\aboutButtonScript.cs" />
+     <Compile Include="Assets\Scripts\welcome page scripts\aboutPopUPScript.cs" />
+     <Compile Include="Assets\Scripts\welcome page scripts\buttonEntryScript.cs" />
+     <Compile Include="Assets\Scripts\welcome page scripts\howToPlayButtonScript.cs" />
+     <Compile Include="Assets\Scripts\welcome page scripts\playButtonScript.cs" />
+     <Compile Include="Assets\SimpleParticlePack\Scripts\ParticleTester.cs" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{2CB28611-2861-F04B-D4BC-5C12FB6935E5}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
